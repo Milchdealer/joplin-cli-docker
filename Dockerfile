@@ -9,3 +9,4 @@ RUN NPM_CONFIG_PREFIX=~/.joplin-bin npm install -g joplin \
   && ln -s ~/.joplin-bin/bin/joplin /usr/bin/joplin
 
 ENTRYPOINT ["joplin"]
+CMD ["server", "start"]
